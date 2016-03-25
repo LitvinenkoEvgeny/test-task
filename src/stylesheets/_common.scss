@@ -28,3 +28,19 @@ $radius: 7px;
   color: $lightRedColor;
   display: inline-block;
 }
+
+.little__gray__text {
+  font-size: 12px;
+  padding-right: 40px;
+  font-family: "ArialNarrowRegular", sans-serif;
+  color: #99a3b1;
+}
+.label__text {
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 13px;
+  color: #768082;
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+

@@ -45,7 +45,7 @@
   <div class="container">
     <section class="general">
       <aside class="latest__posts">
-        <h2 class="news">Новости</h2>
+        <h2 class="news"><a class="news__link" href="#">Новости</a></h2>
         <ul>
           <li class="news__item">
             <article class="post">
@@ -53,7 +53,31 @@
                 <img src="http://placehold.it/80x80" alt="" class="post__img"/>
               </div>
               <div class="post__descr__wrapper">
-                <h3 class="post__header">Ему, безоасную по всей подзаголовок</h3>
+                <h3 class="post__header"><a href="#" class="post__link">Ему, безоасную по всей подзаголовок</a></h3>
+                <p class="post__descr">Языкового первую запятой сих?</p>
+              </div>
+            </article>
+            <div class="post__delimiter"></div>
+          </li>
+          <li class="news__item">
+            <article class="post">
+              <div class="post__img__wrapper">
+                <img src="http://placehold.it/80x80" alt="" class="post__img"/>
+              </div>
+              <div class="post__descr__wrapper">
+                <h3 class="post__header"><a href="#" class="post__link">Ему, безоасную по всей подзаголовок</a></h3>
+                <p class="post__descr">Языкового первую запятой сих?</p>
+              </div>
+            </article>
+            <div class="post__delimiter"></div>
+          </li>
+          <li class="news__item">
+            <article class="post">
+              <div class="post__img__wrapper">
+                <img src="http://placehold.it/80x80" alt="" class="post__img"/>
+              </div>
+              <div class="post__descr__wrapper">
+                <h3 class="post__header"><a href="#" class="post__link">Ему, безоасную по всей подзаголовок</a></h3>
                 <p class="post__descr">Языкового первую запятой сих?</p>
               </div>
             </article>
@@ -61,8 +85,42 @@
         </ul>
       </aside>
       <div class="login">
-        <div class="sign-in"></div>
-        <div class="social"></div>
+        <div class="sign-in">
+          <form id="login__form" action="/">
+            <h3 class="login__header">Вход</h3>
+            <p class="login__descr">
+              Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+            </p>
+            <label for="login__input" class="login__label"><span>Логин</span></label>
+            <!-- remove value of input-->
+            <input type="text" id="login__input" value="Иван"/>
+
+            <label for="password__input" class="password__label"><span>Пароль</span></label>
+            <input type="password" id="password__input"/>
+            <div class="checkbox__wrapper">
+              <input type="checkbox" id="remember__me" name="remember"/>
+              <label for="remember__me" class="remember__label">
+                <span class="check__img"></span>
+                <span class="checkbox__label">запомнить меня</span>
+              </label>
+            </div>
+            <input type="submit" value="ВХОД" class="login__submit"/>
+          </form>
+        </div>
+        <div class="login__divider"></div>
+        <div class="social">
+          <div class="social__header">
+            Вход через соцсети
+          </div>
+          <p class="social__descr">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+          </p>
+          <div class="social__wrapper">
+            <div class="login__facebook"><span>Войти через facebook</span><i class="facebook"></i></div>
+            <div class="login__twitter"><span>Войти через twitter</span><i class="twitter"></i></div>
+            <div class="login__google"><span>Войти через google</span><i class="google"></i></div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
