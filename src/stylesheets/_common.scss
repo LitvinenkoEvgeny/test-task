@@ -8,7 +8,7 @@ $radius: 7px;
 .navigationLink {
   font-size: 16px;
   font-family: "OpenSansLight", sans-serif;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-right: 20px;
   padding-bottom: 25px;
   padding-left: 20px;
@@ -20,4 +20,11 @@ $radius: 7px;
   @extend .navigationLink;
   padding: 0;
   font-size: 14px;
+}
+
+.section__header {
+  font-family: "PTSansRegular", sans-serif;
+  font-size: 23px;
+  color: $lightRedColor;
+  display: inline-block;
 }

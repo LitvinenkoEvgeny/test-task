@@ -1,6 +1,7 @@
 @import "compass/css3/user-interface";
 .navigation {
   @include span(12);
+  height: 63px;
   background-color: $lightRedColor;
   border-radius: $radius;
   padding-left: 0;
@@ -26,12 +27,14 @@ $bar-spacing: 10px;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 25px;
   border-top-left-radius: $radius;
   border-bottom-left-radius: $radius;
   &--active {
     background-color: $navBorderColor;
+    padding-top: 22px;
+    padding-bottom: 13px;
   }
 }
 
@@ -87,7 +90,7 @@ $bar-spacing: 10px;
 
 .nav__item {
   float: left;
-  height: 75px;
+  height: 63px;
   &:not(:last-child){
     border-right: 1px solid #da4453;
   }
@@ -132,7 +135,7 @@ $bar-spacing: 10px;
   width: 231px;
   height: 34px;
   outline: none;
-  margin-top: 20px;
+  margin-top: 13px;
   border: none;
   border-radius: $radius;
   padding-left: 25px;
@@ -148,7 +151,7 @@ $bar-spacing: 10px;
 .search__icon{
   background-image: url("../images/sprites.png");
   position: absolute;
-  top: 32px;
+  top: 25px;
   right: 10px;
   width: 17px;
   height: 17px;
