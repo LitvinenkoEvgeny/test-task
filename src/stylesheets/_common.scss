@@ -1,0 +1,23 @@
+$lightRedColor: #ed5565;
+$greyColor: #434a54;
+$greyFontColor: #c6cbd2;
+$mainBackgroundColor: #f0f2f5;
+$navBorderColor: #da4453;
+$radius: 7px;
+
+.navigationLink {
+  font-size: 16px;
+  font-family: "OpenSansLight", sans-serif;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+.hiddenMenuLink {
+  @extend .navigationLink;
+  padding: 0;
+  font-size: 14px;
+}

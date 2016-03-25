@@ -1,6 +1,14 @@
-exports.welcome = function(){
-  let inputs = ["d","y","n","o"]
-  let result = inputs.map(word => word.split("")[0] ).reduce( (a,b) => a+b );
-  // because everyone loves over-engineering
-  console.log(result)
-}
+exports.init = function(){
+  let menu = document.getElementsByClassName(`hamburger-menu`)[0];
+  let menuBar = menu.getElementsByClassName(`bar`)[0];
+  let hiddenMenu = document.getElementsByClassName(`hidden__menu`)[0];
+
+
+  function menuClick() {
+    menuBar.classList.toggle(`animate`);
+    menu.classList.toggle(`hamburger-menu--active`);
+    hiddenMenu.classList.toggle(`hidden__menu--open`);
+  }
+
+  menu.addEventListener(`click`, menuClick);
+};
