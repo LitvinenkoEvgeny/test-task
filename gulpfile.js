@@ -31,7 +31,7 @@ gulp.task('compass', function() {
     }))
     .on('error', onError)
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
+      browsers: ['last 12 versions'],
       cascade: false
     }))
     .pipe(cleanCSS({debug: true}, function (details) {
