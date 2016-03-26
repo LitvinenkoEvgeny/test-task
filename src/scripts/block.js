@@ -1,6 +1,6 @@
 export default function () {
-  let block = document.getElementsByClassName(`info__block`)[0];
-  let closeButton = block.getElementsByClassName(`info__close`)[0];
+  let block = document.body.querySelector(`.info__block`);
+  let closeButton = block.querySelector(`.info__close`);
 
   function closeBlock() {
     block.classList.add(`info__block--closed`);
