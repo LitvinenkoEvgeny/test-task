@@ -1,0 +1,68 @@
+.about__us {
+  @include span(12);
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+//==================================================================================
+// about text
+//==================================================================================
+
+.about__text__block {
+  @include span(3 of 12);
+  height: 257px;
+  background-color: #393f48;
+  padding: 30px 20px 20px 30px;
+}
+
+.about__header{
+  font-size: 21px;
+  color: #ffffff;
+  font-family: "OpenSansRegular", sans-serif;
+}
+.about__descr{
+  padding-top: 30px;
+  font-family: "ArialNarrowRegular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #99a3b1;
+}
+
+//==================================================================================
+// End of about text
+//==================================================================================
+
+
+.about__lists {
+  @include span(9 of 12 last);
+  background-color: #434a54;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+.about__list{
+  @include span(3 of 12);
+  &:last-child{
+    @include span(3 of 12 last);
+  }
+}
+
+.about__first__item{
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 15px;
+  color: #929ba7;
+  padding-bottom: 30px;
+}
+.about__list___item{
+  margin-bottom: 10px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  a{
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}

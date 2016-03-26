@@ -26,7 +26,8 @@ gulp.task('compass', function() {
     .pipe($.compass({
       css: 'dist/stylesheets',
       sass: 'src/stylesheets',
-      require: ['susy']
+      font: 'dist/fonts',
+      require: ['susy', 'font-awesome-sass']
     }))
     .on('error', onError)
     .pipe(autoprefixer({

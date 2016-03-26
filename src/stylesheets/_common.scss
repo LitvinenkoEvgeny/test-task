@@ -44,3 +44,18 @@ $radius: 7px;
   padding-top: 30px;
 }
 
+.common__button {
+  cursor: pointer;
+  outline: none;
+  width: 138px;
+  height: 39px;
+  font-family: "ArialNarrowBold", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 39px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: $radius;
+  color: #ffffff;
+}
